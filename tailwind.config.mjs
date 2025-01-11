@@ -8,8 +8,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        "dark-purple": { 100: "#ab5c74", 200: "#211E2E", 300: "#6e142f" },
+        "accent-text": "#fbf2e0",
+        "accent-color": "#c63662",
+        "search-blue": "#b9cff0",
+      },
+      fontFamily: {
+        roboto: ["var(--font-roboto)", "sans-serif"],
+        ropaSans: ["var(--font-ropa-sans)", "sans-serif"],
+      },
+      backgroundImage: {
+        'custom-gradient': "radial-gradient(circle, rgba(237,168,198,1) 0%, rgba(131,90,150,1) 100%)",
+        'soft-peach-pink': "linear-gradient(90deg, rgba(255,200,180,1) 0%, #ffa0aa 100%)",
       },
     },
   },
