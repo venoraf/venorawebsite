@@ -150,13 +150,13 @@ export default function Header({ setShowMailer }) {
               (linkMenu &&
                 `grid grid-cols-3 right-5 ${
                   path !== "/"
-                    ? "-bottom-[12rem] md:-bottom-[16.5rem]"
+                    ? "-bottom-[12rem] md:-bottom-[9rem]"
                     : "-bottom-[9rem]"
                 }`) ||
               (profileMenu &&
                 `flex flex-col right-5 ${
                   path !== "/"
-                    ? "-bottom-[20.5rem] md:-bottom-[26rem]"
+                    ? "-bottom-[20.5rem] md:-bottom-[28.5rem]"
                     : " -bottom-[28.5rem]"
                 }`)
             } bg-dark-purple-200 border border-[0.5rem]  border-accent-color  rounded-[1.5rem] p-6 gap-6`}
