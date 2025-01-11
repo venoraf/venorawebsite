@@ -306,10 +306,11 @@ export default function Search() {
                 src={
                   displayQuery == "life"
                     ? "search-img/life.jpeg"
-                    : "https://github-readme-stats.vercel.app/api/top-langs/?username=rumezaa&layout=compact&theme=nightowl&hide_border=true&exclude_repo=the-www-blog,clean-water-foundation&langs_count=6"
+                    : "https://github-readme-stats.vercel.app/api/top-langs/?username=venoraf&layout=donut&theme=radical"
+
                 }
-                alt="rumezaa"
-                className="w-full h-[17rem] rounded-t-lg"
+                alt="venoraf"
+                className="w-full h-[19rem] rounded-t-lg"
               />
 
               {(displayQuery == "venoras-projects" && (
@@ -373,14 +374,6 @@ export default function Search() {
                   <h2 className="opacity-70 text-lg">
                     The following is an archive of memorable experiences where I
                     leave my comfort zone to experience something new.
-                  </h2>
-
-                  <h2 className="opacity-70 text-lg">
-                    Warning: I over-romantacize my life a lot.
-                  </h2>
-
-                  <h2 className="opacity-70 text-sm">
-                    (but its more fun that way)
                   </h2>
                 </div>
               )}
