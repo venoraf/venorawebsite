@@ -39,13 +39,9 @@ export default function Header({ setShowMailer }) {
     },
     {
       text: "resume",
-      icon: "resume.svg",
+      icon: "resume1.png",
       url: "https://drive.google.com/file/d/1TqPuPXkIl13Ckovf_xVt6ekxZX0_svEm/view?usp=sharing",
-    },
-    {
-      text: "articles",
-      icon: "articles.svg",
-      url: "https://rumezasrace.substack.com/",
+      style: { width: '100px', height: '100px' },
     },
   ];
 
@@ -155,13 +151,13 @@ export default function Header({ setShowMailer }) {
                 `grid grid-cols-3 right-5 ${
                   path !== "/"
                     ? "-bottom-[12rem] md:-bottom-[16.5rem]"
-                    : "-bottom-[16.5rem]"
+                    : "-bottom-[9rem]"
                 }`) ||
               (profileMenu &&
                 `flex flex-col right-5 ${
                   path !== "/"
-                    ? "-bottom-[20.5rem] md:-bottom-[24.5rem]"
-                    : " -bottom-[24.5rem]"
+                    ? "-bottom-[20.5rem] md:-bottom-[26rem]"
+                    : " -bottom-[28.5rem]"
                 }`)
             } bg-dark-purple-200 border border-[0.5rem]  border-accent-color  rounded-[1.5rem] p-6 gap-6`}
           >
@@ -186,84 +182,83 @@ export default function Header({ setShowMailer }) {
 
 
             {profileMenu && (
-              <div className="flex flex-col w-full">
-                <div className="flex flex-row w-full gap-x-10 justify-end">
-                  <div className="flex flex-row">
-                    <h2>venora10@gmail.com</h2>
-                    <div
-                      className="bg-no-repeat bg-cover w-5 h-5 cursor-pointer"
-                      onClick={handleCopy}
-                      style={{
-                        backgroundImage: textCopy
-                          ? "url(icons/copy-filled.svg)"
-                          : "url(icons/copy.svg)",
-                      }}
-                    />
-                  </div>
+              <div
+              className="flex flex-col w-full"
+              >
+              <div className="flex flex-row w-full gap-x-10 justify-end">
+                <div className="flex flex-row">
+                  <h2>venora10@gmail.com</h2>
                   <div
                     className="bg-no-repeat bg-cover w-5 h-5 cursor-pointer"
-                    onClick={() => {
-                      setProfileMenu(!profileMenu);
-                      setShowMenu(!showMenu);
-                      setLinkMenu(false);
+                    onClick={handleCopy}
+                    style={{
+                      backgroundImage: textCopy
+                        ? "url(icons/copy-filled.svg)"
+                        : "url(icons/copy.svg)",
                     }}
-                    style={{ backgroundImage: "url(icons/exit.svg)" }}
                   />
                 </div>
-                <div className="flex flex-row w-full">
-                  <h2
-                    className={`${
-                      textCopy ? "visible" : "invisible"
-                    } text-xs text-center w-full text-white mb-4`}
-                  >
-                    email copied successfully!
-                  </h2>
-                </div>
-
-                <div className="flex flex-col justify-center items-center">
-                  <div
-                    style={{ backgroundImage: "url(head-shot.png)" }}
-                    className="rounded-full bg-no-repeat bg-cover w-24 h-24 cursor-pointer"
-                  />
-                  <h2 className="text-xl">Hi, I'm Venora!</h2>
-                </div>
-                <div className="flex flex-col font-ropaSans-light text-md gap-y-5">
-                  <h2 className="text-center">
-                    Welcome to my personal site 💜
-                  </h2>
-                  <div className="flex flex-col">
-                    {" "}
-                    <h2 className="text-sm text-white">HOW TO USE</h2>
-                    <h2>
-                      Explore my projects and journey using{" "}
-                      <span className="italic text-white">Search </span>
-                    </h2>
-                    <h2>
-                      Send me a message using{" "}
-                      <span className="italic text-white">Gmail</span>{" "}
-                    </h2>
-                    <h2>
-                      View more of my work using the{" "}
-                      <span className="italic text-white">Dot-Menu</span>
-                    </h2>
-                    <h2>
-                      Learn more about me using the{" "}
-                      <span className="italic text-white">About Page</span>
-                    </h2>
-                  </div>
-                  <Link
-                    href="/about"
-                    className="text-center text-white border border-white py-2 px-4 rounded-full hover:bg-white hover:text-dark-purple-100 transition-all duration-300"
-                    onClick={() => {
-                        setShowMenu(false); // Close the popup menu
-                        setProfileMenu(false); // Close the profile menu
-                    }}
-                    >
-                    About Page
-                    </Link>
-                </div>
+                <div
+                  className="bg-no-repeat bg-cover w-5 h-5 cursor-pointer"
+                  onClick={() => {
+                    setProfileMenu(!profileMenu);
+                    setShowMenu(!showMenu);
+                  }}
+                  style={{ backgroundImage: "url(icons/exit.svg)" }}
+                />
               </div>
-            )}
+              <div className="flex flex-row w-full">
+                <h2
+                  className={`${
+                    textCopy ? "visible" : "invisible"
+                  } text-xs text-center w-full text-white mb-4`}
+                >
+                  email copied successfully!
+                </h2>
+              </div>
+              <div className="flex flex-col justify-center items-center">
+                <div
+                  style={{ backgroundImage: "url(head-shot.png)" }}
+                  className="rounded-full bg-no-repeat bg-cover w-24 h-24 cursor-pointer"
+                />
+                <h2 className="text-xl">Hi, I'm Venora!</h2>
+              </div>
+              <div className="flex flex-col font-ropaSans-light text-md gap-y-5">
+                <h2 className="text-center">
+                  Welcome to my personal site 🩷
+                </h2>
+                <div className="flex flex-col">
+                  <h2 className="text-sm text-white">HOW TO USE</h2>
+                  <h2>
+                    Explore my projects and journey using{" "}
+                    <span className="italic text-pink-300">Search </span>
+                  </h2>
+                  <h2>
+                    Send me a message using{" "}
+                    <span className="italic text-pink-300">Gmail</span>{" "}
+                  </h2>
+                  <h2>
+                    View more of my work using the{" "}
+                    <span className="italic text-pink-300">Dot-Menu</span>
+                  </h2>
+                  <h2>
+                    Learn more about me using the{" "}
+                    <span className="italic text-pink-300">About Page</span>
+                  </h2>
+                </div>
+                <Link
+                  href="/about"
+                  className="text-center text-white border border-white py-2 px-4 rounded-full hover:bg-white hover:text-dark-purple-100 transition-all duration-300"
+                  onClick={() => {
+                    setShowMenu(false); // Close the popup menu
+                    setProfileMenu(false); // Close the profile menu
+                  }}
+                >
+                  About Page
+                </Link>
+              </div>
+            </div>
+          )}
           </div>
         )}
       </div>

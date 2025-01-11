@@ -9,7 +9,6 @@ export default function SearchBar({ query }) {
   const dropdownRef = useRef(null);
   const searches = [
     { search: "Venora's Projects", param: "venoras-projects" },
-    { search: "Venora's Resume", param: "venoras-resume" },
     { search: "Venora's Life", param: "life" },
     { search: "Why Hire Venora?", param: "why-hire-venora" },
   ];
@@ -50,7 +49,7 @@ export default function SearchBar({ query }) {
             </h2>
             {/* Move the subheader up along with (Ven)oogle */}
             <h3 className="text-accent-text text-md lg:text-lg xl:text-xl absolute -top-5 lg:-top-11 text-center w-full">
-            Start exploring by clicking the search bar below!
+            Explore the Trending Searches in the Bar Below!
             </h3>
         </>
         )}
