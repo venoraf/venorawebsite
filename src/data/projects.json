@@ -76,41 +76,57 @@
     "links": [{"link": "https://drive.google.com/file/d/1Gax_ufzoxFZFPidcb58AGp1aJl0Kw3uU/view?ths=true", "name": "business plan", "url": "link-outline.svg" , "urlHover": "link-outline.svg"}, {"link": "https://youtu.be/Qiv7s6PP1yE", "name": "video", "url": "video-outline.svg" , "urlHover": "video-outline.svg"}, {"link": "https://github.com/rumezaa/Renew", "name": "github", "url": "github-outline.svg" , "urlHover": "github-outline.svg"}]
   },
   {
-    "title": "Nurture",
-    "alias": "nurture",
-    "headline": "Hackathon team attempts to align generational communication gap",
+    "title": "Drunk Walk Home",
+    "alias": "drunkwalkhome",
+    "headline": "Hackathon team attempts to code a stupid game for fun",
     "timeline": "Aug 2024",
     "type": "project",
-    "tech": ["Flask"," React.js", "OpenAI API"],
-    "searchDescription": "A web app designed to bring the functional family therapy online and bridge generational communication gaps · Albert Health Hacks", 
-    "longDescription": "Inspired by generational communication between parents and children, we created a tool that allows real-time monitoring of your communication with family members, partners, or friends. The tool helps assess how they'll receive your message and suggests the best way to communicate based on their attitudes. Developed prototype in <24 hours using React JS, TailwindCSS, Python, and Open AI API. This app was developed for Albert Health Hacks.",
-    "links": [{"link": "https://www.youtube.com/watch?v=V7ieDzRjtcY&t=9s", "name": "video", "url": "video-outline.svg" , "urlHover": "video-outline.svg"}, {"link": "https://github.com/rumezaa/nurture", "name": "github", "url": "github-outline.svg" , "urlHover": "github-outline.svg"}]
+    "tech": ["Unreal Engine", "C#", "Game Design"],
+    "searchDescription": "A game where players navigate unpredictable obstacles and maintain balance on a wobbly journey back home · Creation of Games Game Jam", 
+    "longDescription": "We created a lighthearted, quirky, and challenging game that simulates the chaotic journey of navigating home after a wild night out. Players control a stumbling character who must overcome unpredictable obstacles, maintain balance, and make critical decisions to reach their doorstep safely. Play as a drunk girl and experience a wobbly adventure through the night!",
+    "links": [{"link": "https://github.com/raaamen/drunkwalkhome.git", "name": "github", "url": "github-outline.svg" , "urlHover": "github-outline.svg"}],
+    "pptx": "https://docs.google.com/presentation/d/e/2PACX-1vTKDvcOdZcfLBC8eGrJ2NsuU0mYWWY1UXTvAcVb1EJuRTlNzf7EcLb7TWs0FPjQww/pub?start=false&loop=false&delayms=3000"
   },
   {
-    "title": "Muto",
-    "alias": "muto",
-    "headline": "University sweats build a workforce reintegration tool under 24 hours",
+    "title": "Time Machine Rush",
+    "alias": "timemachinerush",
+    "audio": "timemachinerush-audio.mp3",
+    "headline": "University Sweats Build a Working Game in Under a Week",
     "timeline": "Nov 2024",
     "type": "project",
-    "tech": ["Next.js","Firebase", "Tailwind"],
-    "searchDescription": "A Next.js app aimed at providing the vulnerable population with the resources and opportunities they need to reintegrate into society · Hack the Change 2024",
-    "longDescription": "Our platform onboard vulnerable individuals by listening to their stories and struggles. We use a custom TensorFlow model with 75 input nodes and dual 16-node hidden layers to analyze keyword frequency and emotions in user narratives. This allows us to generate tailored resource, job, and mentor suggestions based on users' experiences and skills. Developed in under 24 hours for Hack the Change 2024, we also engaged with our target demographic (the homeless) to gather feedback on our product.", 
-    "links": [{"link": "https://github.com/rumezaa/Hackthechange", "name": "github", "url": "github-outline.svg" , "urlHover": "github-outline.svg"}, {"link": "https://hackthechange-lime.vercel.app/", "name": "check it out", "url": "link-outline.svg" , "urlHover": "link-outline.svg"}]
+    "tech": ["Godot","Javascript", "Music"],
+    "searchDescription": "A fast-paced adventure game where players take control of a daring time traveler racing through history to fix temporal disruptions", 
+    "longDescription": "Our project allows you to navigate through a futuristic laboratory—while solving puzzles, avoiding obstacles, and battling time anomalies. With a thrilling blend of action, strategy, and exploration, Time Machine Rush challenges players to restore balance to the timeline before it’s too late. Every second counts in this race against time!",
+    "links": [{"link": "https://github.com/SophaJS/TimeMachineRush.git", "name": "github", "url": "github-outline.svg" , "urlHover": "github-outline.svg"}, {"link": "https://fatleo14.itch.io/time-machine-rush", "name": "check it out", "url": "link-outline.svg" , "urlHover": "link-outline.svg"}],
+    "video": {
+        "embed": "<iframe width='560' height='315' src='public/search-videos/timemachinerush-banner.mp4' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+    }
   },
   {
-    "title": "Dogma AI",
-    "alias": "dogma",
-    "headline": "Girl flys to Toronto because she heard Cohere, OpenSesame and Hackathon in the same sentence",
-    "timeline": "Nov 2024",
+    "title": "The Dinosaur Game",
+    "alias": "dino",
+    "headline": "Girl Tries to Recreate Neuralink with 12 year old tech",
+    "timeline": "Feb 2024",
     "type": "project",
-    "tech": ["Next.js", "Tailwind", "Tavus API"],
-    "searchDescription": "An AI tutor you can join a call with to explain topics ranging from complicated school problems to real life advice · (not responsible for anything bad AI says <3)",
-    "longDescription": "I was one of the 32 people selected to participate in the Hunger Games-style Cohere x Open Sesame Hackathon in Toronto. I flew out for the sole purpose of attending because hackathons make me feel things. We created an AI tutor using the Tavus API that you can join a call with. Simply upload a document ranging from complicated math problems to 2025 mood boards and have a real-time conversation with our assistant.", 
-    "links": [{"link": "https://github.com/rumezaa/cohere-opensesame", "name": "github", "url": "github-outline.svg" , "urlHover": "github-outline.svg"}, {"link": "https://drive.google.com/file/d/1YPrVSsCgJ8JRlvLQXzU20SsFIBdKSkDx/view", "name": "team", "url": "link-outline.svg" , "urlHover": "link-outline.svg"}]
+    "tech": ["Python", "MUSE - EEG Tech"],
+    "searchDescription": "Brainwave Technology that lets you use your brain to make the dinosaur jump (We promise the dinosaur is trying its' best <3)",
+    "longDescription": "Our project allows you to control the offline Google Dinosaur Game using your brain waves. To do this, we process real-time EEG data to identify moments of high concentration by focusing on a specific range of brain wave frequencies known as beta band power. To isolate these frequencies, we applied a Butterworth bandpass filter. We then used these frequencies as a trigger action: in this case, if high concentration is detected, press spacebar. How goated is this.",
+    "links": [
+        {
+            "link": "https://github.com/venoraf/HackRU2024-Muse.git",
+            "name": "github",
+            "url": "github-outline.svg",
+            "urlHover": "github-outline.svg"
+        }
+    ],
+    "video": {
+        "embed": "<iframe width='560' height='315' src='public/1711469968250.mp4' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+    }
   },
   {
     "title": "Meetmidway",
     "alias": "meetmidway",
+    "image": "public/search-img/meetmidway-banner.png",
     "headline": "Pre-successul CS sweats compress a 2-month hackathon project into 2 weeks of grind",
     "timeline": "present",
     "type": "startup",

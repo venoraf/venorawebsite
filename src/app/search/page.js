@@ -114,30 +114,72 @@ export default function Search() {
       <div>
         <div className="fixed inset-0 bg-gray-900 bg-opacity-70 z-40 flex items-center justify-center">
           <div
-            className={`p-2 flex flex-col items-center h-4/5 w-11/12 md:w-4/5 lg:w-3/5 bg-accent-color rounded-lg shadow-lg z-50 transform transition-transform duration-300 ease-in-out`}
+            className={`p-2 flex flex-col items-center h-4/5 w-11/12 md:w-4/5 lg:w-3/5 bg-accent-color rounded-lg shadow-lg border-2 border-pink-800 z-50 transform transition-transform duration-300 ease-in-out`}
           >
             <div className="flex row w-full justify-end mb-2">
               <div
-                className="bg-no-repeat bg-cover w-6 h-6"
+                className="bg-no-repeat bg-cover w-6 h-6 cursor-pointer transform transition-transform duration-100 hover:scale-110 hover:opacity-60"
                 style={{ backgroundImage: "url(icons/exit.svg)" }}
                 onClick={() => setIsOpen(false)}
               />
             </div>
-
+  
             <div
-              className="bg-no-repeat bg-contain bg-center w-full h-2/5 md:h-3/5 rounded-lg"
+              className="relative w-5/6 h-2/5 md:h-3/5 rounded-lg bg-no-repeat bg-cover bg-center border-2 border-stone-400 overflow-hidden"
               style={{
-                backgroundImage: `url(search-img/${data.alias}-banner.png)`,
+                backgroundImage: data.image
+                  ? `url(search-img/${data.alias}-banner.png)`
+                  : "url(default-background.png)", // Default background
               }}
-            />
-
+            >
+              {data.video ? (
+                <video
+                  className="absolute top-0 left-0 w-full h-full object-cover rounded-lg border border-stone-700"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                >
+                  <source
+                    src={`search-videos/${data.alias}-banner.mp4`}
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              ) : data.pptx ? (
+                <iframe
+                  src="https://docs.google.com/presentation/d/e/2PACX-1vTKDvcOdZcfLBC8eGrJ2NsuU0mYWWY1UXTvAcVb1EJuRTlNzf7EcLb7TWs0FPjQww/embed?start=true&loop=false&delayms=1000"
+                  className="absolute top-0 left-0 w-full h-full object-cover rounded-lg"
+                  frameBorder="0" 
+                  allowFullScreen
+                  title="Google Slides Slideshow"
+                ></iframe>
+            ) : (
+              <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center text-white">
+                No video, image, or .pptx file available
+              </div>
+            )}
+          </div>
+  
+            {data.audio && (
+              <div className="mt-4 w-full flex justify-center">
+                <audio
+                  className="w-5/6 md:w-4/6 rounded-lg"
+                  controls
+                >
+                  <source src={`search-audio/${data.audio}`} type="audio/mpeg" />
+                  Your browser does not support the audio tag.
+                </audio>
+              </div>
+            )}
+  
             <div className="flex flex-col w-full items-center justify-start h-3/5 p-4 gap-y-2 relative">
               <h2 className="w-full text-2xl">{data.title}</h2>
-              <div className={`flex flex-row w-full gap-x-2`}>
+              <div className="flex flex-row w-full gap-x-2">
                 {displayQuery === "venoras-projects" &&
                   data.links.map((link, idx) => (
                     <Link
-                      className={`flex flex-row py-1.5 px-3 text-sm font-medium text-center items-center gap-x-2 rounded  border border-stone-700 transform transition-all duration-300 ${
+                      className={`flex flex-row py-1.5 px-3 text-sm font-medium text-center items-center gap-x-2 rounded border border-stone-700 transform transition-all duration-300 ${
                         link.name == "github"
                           ? "bg-dark-purple-300 hover:bg-[#4D456E] border-dark-purple-300 flex-row-reverse"
                           : "bg-white text-dark-purple-100 hover:bg-stone-200 hover:text-dark-purple-300"
@@ -145,8 +187,6 @@ export default function Search() {
                       key={idx}
                       href={link.link}
                       target={"_blank"}
-                      onMouseEnter={() => setIsHover(true)}
-                      onMouseLeave={() => setIsHover(false)}
                     >
                       <h2>{link.name}</h2>
                       <div
@@ -154,22 +194,20 @@ export default function Search() {
                           link.name == "video" ? "w-6 h-6" : "w-4 h-4"
                         }`}
                         style={{
-                          backgroundImage: `url(icons/${
-                            isHover ? link.urlHover : link.url
-                          })`,
+                          backgroundImage: `url(icons/${link.url})`,
                         }}
                       />
                     </Link>
                   ))}
               </div>
-
+  
               <div
                 className="relative w-full h-full overflow-y-scroll overflow-x-hidden text-wrap scroll-smooth"
-                style={{ scrollbarWidth: "1" }}
+                style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
               >
                 <div className="font-thin">{data.longDescription}</div>
               </div>
-
+  
               <div className="flex flex-row w-full gap-x-2">
                 {data.type == "project" &&
                   data.tech.map((stack, idx) => (
@@ -187,7 +225,8 @@ export default function Search() {
       </div>
     );
   };
-
+  
+  
   return (
     <div className="flex flex-col w-full h-full text-white font-ropaSans">
       <div className="flex flex-col w-full relative ">
