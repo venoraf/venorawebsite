@@ -1,81 +1,5 @@
 [
   {
-    "title": "Blu3Whale ED",
-    "type": "project",
-    "alias": "blu3whale",
-    "headline": "Girl discovers programming (Building an eating disorder recovery app)",
-    "timeline": "Jan 2022 - Mar 2022",
-    "searchDescription": "A mobile app that combines community-driven features to help individuals suffering from eating disorders recover · Technovation Girls Semifinalist (Top 8 in Canada) · Python · Kivy · Sentiment Analysis",
-    "longDescription": "Using Python Kivy, I developed an Android mobile application, Blu3Whale ED, designed to support individuals with eating disorders. The app integrates the MealDB API to provide an in-app recipe search engine tailored to user input and leverages Firebase for user authentication and a public chat forum. I implemented Python’s NLTK library to create a Naïve Bayes algorithm that classifies user moods (e.g., happy, sad) based on text inputs found in the library's lexicon dictionary and visualized this data using matplotlib, enabling users to track their emotional well-being in their recovery. The app achieved recognition as a Top 8 Semifinalist in Canada for the Technovation Girls Competition.",
-    "tech": ["Python", "Matplotlib", "Numpy", "NLTK"],
-    "links": [{"link": "https://github.com/rumezaa/blu3whale", "name": "github", "url": "github-outline.svg" , "urlHover": "github-outline.svg"}]
-
-  },
-  {
-    "title": "YYC Tech Connect",
-    "type": "project",
-    "headline": "Girl discovers programming with other people (Building an event calendar aggregator)",
-    "alias": "tech-connect",
-    "timeline": "Feb 2022 - Jun 2022",
-    "searchDescription": "A calendar aggregator made with React and Flask to centralize ongoing events in the YYC tech sector using the Eventbrite API - I'm banned from this API now :(",
-    "longDescription": "I developed the backend for YYC Tech Connect, utilizing Flask to manage CRUD operations for the Eventbrite API. The frontend was built with React and Material-UI components to deliver a seamless user experience.", 
-    "tech": ["Flask", "EventBrite", "React.js", "Material UI"],
-    "links": [{"link": "https://github.com/rumezaa/mockup", "name": "github", "url": "github-outline.svg" , "urlHover": "github-outline.svg" }]
-  },
-  {
-    "title": "Winter Go",
-    "type": "hackathon",
-    "alias": "winter-go",
-    "headline": "Hackathon team saves Calgary's tourism scene",
-    "timeline": "Feb 2023",
-    "searchDescription": "A web-app designed to recommend tourists locations and activities based on the weather. Top 3 project for YYCHacks 2023 · TailwindCSS · Express.js · Figma ",
-    "longDescription": "We created an Express.js app that leveraged the OpenAI API to recommend activities and tourist destinations in a user's vicinity depending on the weather conditions and temperature. We used Tailwind for styling.", 
-    "tech": ["Express.js", "Tailwind CSS", "An API I forgot the name of"],
-    "links": [{"link": "https://hack2023.vercel.app/", "name": "check it out", "url": "link-outline.svg" , "urlHover": "link-outline.svg"}]
-  },
-  {
-    "title": "Torpedo",
-    "type": "startup",
-    "alias": "torpedo",
-    "headline": "Highschoolers undergo the startup cannon event ",
-    "timeline": "Mar 2023",
-    "searchDescription": "Landing page for Torpedo, a mentorship platform aimed at connecting young talent with mentorship and skill activation opportunities · Labs Batch X",
-    "longDescription": "I made Torpedo's waitlist site using React, Tailwind CSS, and Google APIs to manage waitlist data. Building Torpedo was an insightful journey into the realm of startups, and it truly fortified my interest in creating software that can scale to impact a vast number of people. This experience also pivoted some of my interests toward UI/UX design and creating pitch decks for promising products.", 
-    "links": [{"link": "https://main--spiffy-capybara-00bee2.netlify.app/", "name": "check it out", "url": "link-outline.svg" , "urlHover": "link-outline.svg"}, {"link": "https://github.com/rumezaa/jointorpedo.Inc", "name": "github", "url": "github-outline.svg" , "urlHover": "github-outline.svg"}]
-  },
-  {
-    "title": "Alexa Connect",
-    "alias": "alexa-connect",
-    "timeline": "Mar 2023",
-    "headline": "18 somthing-year-olds pitch to Amazon Alexa (successfully)",
-    "type": "consultancy",
-    "searchDescription": "An Omegle and house party hybrid app recommendation to Amazon Alexa which matches users based on their shared interests and uses Alexa to guide them through an engaging activity · Consulting",
-    "longDescription": "Consulted for Amazon Alexa and had the opportunity to pitch the recommendation to executives. We also built a prototype using Figma.", 
-    "links": [{"link": "https://www.figma.com/proto/DEihgj9v451Bmrza6rXFYs/Alexa-Connect-Mockup?node-id=54-232&p=f&t=vEFc2vQpE4MfEfAK-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=54%3A232", "name": "check it out", "url": "link-outline.svg" , "urlHover": "link-outline.svg"},{ "link": "https://drive.google.com/file/d/1IGW4HPWXcz-xMoIpjDRW8B4vE3srwIzk/view?usp=sharing", "name": "pitch deck", "url": "link-outline.svg" , "urlHover": "link-outline.svg"}]
-  },
-
-  {
-    "title": "Bumblebee",
-    "alias": "bumblebee",
-    "timeline": "May 2023",
-    "headline": "Software Engineer trys turning into an Electrical Engineer (impossible edition) ",
-    "type": "research",
-    "searchDescription": "A self-sustaining battery pack powered by radio waves and solar energy that provides a continuous and reliable stream of electricity · Research · Moonshot Project",
-    "longDescription": "A moonshot project refers to an ambitious, exploratory, and groundbreaking initiative with high risk but equally high potential impact. My partner and I were exploring the sustainable energy space when we decided to deep dive into the world of wireless electricity. Bumblee was a pivot from a larger-scale idea of implementing a completely wireless energy grid by utilizing MRC (Magnetic Resonance Coupling) technology and enhancing its efficiency with radio wave energy harvesters. Our thinking sought to solve the issue of vulnerable physical infrastructure affecting access to electricity in remote regions and areas impacted by severe natural disasters. We pivoted to the Bumblee battery pack after understanding the associated risks of a completely wireless grid (although we are not far from a future where this exists). Instead, we implemented our previous system—without coupling—on a smaller scale, where energy is supplied through photovoltaic technology and radio wave energy harvesters.", 
-    "links": [{"link": "https://rumeza06.wixstudio.com/bumblebee", "name": "check it out", "url": "link-outline.svg" , "urlHover": "link-outline.svg"},{ "link": "https://docs.google.com/presentation/d/1wipk_objn23PDLHS2NRPPsxt2fv0li9wZbaUScqSdtw/edit?usp=sharing", "name": "pitch deck", "url": "link-outline.svg" , "urlHover": "link-outline.svg"}]
-  },
-  {
-    "title": "Renew",
-    "alias": "renew",
-    "headline": "Girl builds a fashion circularity app to help local non-profits",
-    "timeline": "Jan 2023 - Apr 2023",
-    "type": "project",
-    "tech": ["React Native", "Nativewind", "Firebase"],
-    "searchDescription": "A mobile app built to create a pipeline for charities and nonprofits to gain the supplies they need to scale their missions · Technovation Girls Quarterfinalist",
-    "longDescription": "I created Renew, a platform that organizes the allocation of excess donations to charities and non-profits. My research in the fashion sustainability space and interviews with niche non-profits revealed that 80% of clothing donations are exported overseas to developing countries, rather than being distributed within our own economy to help scale local charities, non-profits, or aid people in need. I developed a mobile app solution to address this issue by creating a platform that organizes the allocation of excess donations to charities and non-profits. I developed the platform in a week using React Native, Firebase, and Nativewind CSS. I developed a Calendly variation from scratch for scheduling functionality in the app, a direct messaging system, and a browsing page. I have partnered with the local non-profit Good-Neighbor, planning to utilize the app to increase their garment supply and reach more people in need.", 
-    "links": [{"link": "https://drive.google.com/file/d/1Gax_ufzoxFZFPidcb58AGp1aJl0Kw3uU/view?ths=true", "name": "business plan", "url": "link-outline.svg" , "urlHover": "link-outline.svg"}, {"link": "https://youtu.be/Qiv7s6PP1yE", "name": "video", "url": "video-outline.svg" , "urlHover": "video-outline.svg"}, {"link": "https://github.com/rumezaa/Renew", "name": "github", "url": "github-outline.svg" , "urlHover": "github-outline.svg"}]
-  },
-  {
     "title": "Drunk Walk Home",
     "alias": "drunkwalkhome",
     "headline": "Hackathon team attempts to code a stupid game for fun",
@@ -85,7 +9,7 @@
     "searchDescription": "A game where players navigate unpredictable obstacles and maintain balance on a wobbly journey back home · Creation of Games Game Jam", 
     "longDescription": "We created a lighthearted, quirky, and challenging game that simulates the chaotic journey of navigating home after a wild night out. Players control a stumbling character who must overcome unpredictable obstacles, maintain balance, and make critical decisions to reach their doorstep safely. Play as a drunk girl and experience a wobbly adventure through the night!",
     "links": [{"link": "https://github.com/raaamen/drunkwalkhome.git", "name": "github", "url": "github-outline.svg" , "urlHover": "github-outline.svg"}],
-    "pptx": "https://docs.google.com/presentation/d/e/2PACX-1vTKDvcOdZcfLBC8eGrJ2NsuU0mYWWY1UXTvAcVb1EJuRTlNzf7EcLb7TWs0FPjQww/pub?start=false&loop=false&delayms=3000"
+    "pptx": "https://docs.google.com/presentation/d/e/2PACX-1vTK3t1iaQxh0EhgRpUN9T6SPnybghCEcwMFrPu-a1-14t14tcdprqYnWiVb0GQ0Su-m2d-7V4tBgsYQ/embed?start=true&loop=true&delayms=1000"
   },
   {
     "title": "Time Machine Rush",
@@ -124,15 +48,16 @@
     }
   },
   {
-    "title": "Meetmidway",
-    "alias": "meetmidway",
-    "image": "public/search-img/meetmidway-banner.png",
-    "headline": "Pre-successul CS sweats compress a 2-month hackathon project into 2 weeks of grind",
-    "timeline": "present",
-    "type": "startup",
-    "searchDescription": "We bring your plans outside of the groupchat",
-    "longDescription": "Started in the google GEMINI hackathon. Coming to a phone near you", 
-    "links": [{"link": "https://www.instagram.com/reel/DAhFIbZSyEG/", "name": "video", "url": "video-outline.svg" , "urlHover": "video-outline.svg"}]
+    "title": "Recommender Systems",
+    "alias": "nn",
+    "headline": "CS Students go Above and Beyond Yet Again",
+    "timeline": "Nov 2024 - Dec 2024",
+    "type": "project",
+    "tech": ["Python", "Jupyter Notebook", "Linux"],
+    "searchDescription": "We attempt to recommend you the best tech to buy!",
+    "longDescription": "We built and evaluated three recommender system models—Matrix Factorization, Neural Networks, and Neighborhood-Based Collaborative Filtering—on e-commerce datasets. Matrix Factorization emerged as the most effective for sparse datasets, though all models faced limitations due to data sparsity and parameter tuning.",
+    "links": [{"link": "https://github.com/nfallah/439-final-project.git", "name": "github", "url": "github-outline.svg" , "urlHover": "github-outline.svg"}],
+    "pptx": "https://docs.google.com/presentation/d/e/2PACX-1vQY9OMsjBbz_CINGmLp1gcOqNA8TmZRRt2aIPgnKVtBJqhOi6C2XO9w44ojTIzQfq3MvQjRtqYPhI86/embed?start=true&loop=true&delayms=3000"
   }
 
 ]

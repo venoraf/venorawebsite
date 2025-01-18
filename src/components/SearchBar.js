@@ -49,7 +49,7 @@ export default function SearchBar({ query }) {
             </h2>
             {/* Move the subheader up along with (Ven)oogle */}
             <h3 className="text-accent-text text-md lg:text-lg xl:text-xl absolute -top-5 lg:-top-11 text-center w-full">
-            Explore the Trending Searches in the Bar Below!
+            Click the Search Bar and Explore the Trending Searches in the Bar Below!
             </h3>
         </>
         )}

@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${ropaSans.variable} bg-dark-purple-100`}>
       <head>
         <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=2.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/icon.ico" type="image/x-icon" sizes="500x500" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <title>venoogle</title>

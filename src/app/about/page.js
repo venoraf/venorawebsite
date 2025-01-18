@@ -27,17 +27,11 @@ export default function About() {
           Hello!! Nice to meet you! :)
         </p>
         <p className="mt-4">
-          My name is Venora Furtado and I study Computer Science with a minor
-          in Music Technology and Psychology. I enjoy creating compelling user
-          experiences using my knowledge in programming and web development.
-          Blending both aesthetics and functionality - I focus on making the
-          experience enjoyable.
+        I’m Venora Furtado, a Computer Science student with a minor in Music Technology and Psychology. I’m passionate about creating engaging user experiences by blending my programming skills with aesthetics and functionality—making every interaction as enjoyable as it is intuitive. 
         </p>
         <p className="mt-4">
-          Besides web development, I'm enthusiastic about the advancements in
-          AI, VR, and XR and their potential applications! On my off hours, I
-          love gaming, analyzing fashion trends, playing chess, reading, making
-          music, and cuddling with my cat.
+        Beyond web development, I’m excited about the latest advancements in AI, VR, and XR, and love exploring their incredible potential! 
+        When I’m not diving into tech, you can find me gaming, analyzing fashion trends, playing chess, reading, making music, or cuddling with my cat. 😊
         </p>
         <Link
           href="/search?q=venoras-projects"

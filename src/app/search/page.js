@@ -117,15 +117,19 @@ export default function Search() {
             className={`p-2 flex flex-col items-center h-4/5 w-11/12 md:w-4/5 lg:w-3/5 bg-accent-color rounded-lg shadow-lg border-2 border-pink-800 z-50 transform transition-transform duration-300 ease-in-out`}
           >
             <div className="flex row w-full justify-end mb-2">
-              <div
-                className="bg-no-repeat bg-cover w-6 h-6 cursor-pointer transform transition-transform duration-100 hover:scale-110 hover:opacity-60"
-                style={{ backgroundImage: "url(icons/exit.svg)" }}
-                onClick={() => setIsOpen(false)}
-              />
+            <div
+              className="bg-no-repeat bg-cover w-6 h-6 cursor-pointer transform transition-transform duration-100 hover:scale-110 hover:red-500"
+              style={{ 
+                backgroundImage: "url(icons/exit.svg)",
+                backgroundColor: "transparent" // Ensures default background is transparent
+              }}
+              onClick={() => setIsOpen(false)}
+            />
+
             </div>
   
             <div
-              className="relative w-5/6 h-2/5 md:h-3/5 rounded-lg bg-no-repeat bg-cover bg-center border-2 border-stone-400 overflow-hidden"
+              className="relative w-5/6 h-5/6 md:h-4/5 rounded-lg bg-no-repeat bg-cover bg-center border-2 border-stone-400 overflow-hidden"
               style={{
                 backgroundImage: data.image
                   ? `url(search-img/${data.alias}-banner.png)`
@@ -148,7 +152,7 @@ export default function Search() {
                 </video>
               ) : data.pptx ? (
                 <iframe
-                  src="https://docs.google.com/presentation/d/e/2PACX-1vTKDvcOdZcfLBC8eGrJ2NsuU0mYWWY1UXTvAcVb1EJuRTlNzf7EcLb7TWs0FPjQww/embed?start=true&loop=false&delayms=1000"
+                  src={data.pptx}
                   className="absolute top-0 left-0 w-full h-full object-cover rounded-lg"
                   frameBorder="0" 
                   allowFullScreen
@@ -156,7 +160,7 @@ export default function Search() {
                 ></iframe>
             ) : (
               <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center text-white">
-                No video, image, or .pptx file available
+                
               </div>
             )}
           </div>
@@ -257,56 +261,52 @@ export default function Search() {
                     <>
                       <h2>
                         <span className="bg-[#735B95] py-1">
-                          I transform environments.
+                          I transform virtual environments.
                         </span>
                       </h2>
                       <h2 className="">
                         <span className="bg-[#735B95]  py-1">
-                          seeking global opportunities to specialize in emerging
-                          technologies and apply my skills in software, project
-                          management, and design thinking
+                        Seeking global opportunities to specialize in emerging
+                        technologies and apply my skills in developing software and 
+                        refining my design thinking
                         </span>
                       </h2>
                     </>
                   )}
 
                   <h2>
-                    Ever since I learned how to program, my life’s purpose has
-                    been to use my technical expertise to transform the
-                    environments around me. My technical and project management
-                    skills, combined with my design-thinking approach, have
-                    enabled me to consistently exceed expectations and deliver
-                    impactful results.
+                  Ever since I started exploring programming, I’ve been driven by a passion to use my technical 
+                  expertise to create innovative solutions that positively impact the world around me. 
+                  My background in computer science, combined with my leadership experience and creativity, 
+                  has enabled me to deliver impactful results and exceed expectations.
                   </h2>
 
                   <h2>
-                    In every role, I’ve sought unique opportunities to rise
-                    above challenges and push the boundaries of what’s possible.
-                    At Arcurve, I pitched and developed a recruitment feature
-                    with the potential to become a critical data-collection
-                    asset. Currently, as the youngest developer at Symbiotic AI,
-                    I’ve been deeply involved in achieving major product
-                    milestones, including deploying our platform via AWS,
-                    integrating EPIC API services, and designing interfaces for
-                    cardiologists to enhance revascularization decisions.
+                  In every role, I’ve sought opportunities to make a tangible difference. 
+                  During my time at Broadridge, I contributed to developing a dark pool tracker
+                  that optimized performance by streamlining data aggregation and analysis, 
+                  enabling clients to gain real-time insights into trading activity and improve confidence in decision-making. 
+                  Additionally, at Johnson & Johnson, I spearheaded the creation of a new design system in React JS, 
+                  standardizing and programming UI components, ultimately improving the consistency and scalability of their digital products.
+                  Through my leadership in Rutgers' 
+                  Blueprint club, I facilitated workshops and mentorship programs, 
+                  empowering younger students to pursue careers in technology and building a strong community of support. 
                   </h2>
 
                   <h2>
-                    My consulting efforts with companies like CIBC and Amazon
-                    Alexa have led to product ideas being considered for
-                    implementation, showcasing my skill in identifying
-                    opportunities and delivering value.
+                  My technical projects, such as my game development explorations, 
+                  have demonstrated my ability to apply technical skills like ReactJS, C#, 
+                  and NextJS to real-world problems. I’ve also shared my knowledge as a teacher, 
+                  guiding over 120 students in mastering core computer science principles and inspiring 
+                  the next generation of programmers.
                   </h2>
 
                   <h2>
-                    While my technical experiences are vast, I deeply value
-                    opportunities to broaden my exposure to the challenges and
-                    perspectives of diverse communities worldwide. I am seeking
-                    global opportunities to specialize in emerging technologies
-                    and apply my skills in software, project management, and
-                    design thinking to improve lives while broadening my
-                    understanding of how people around the world navigate and
-                    overcome challenges.
+                  While my technical experiences are diverse, I deeply value opportunities 
+                  to broaden my perspective by engaging with global communities and exploring 
+                  emerging technologies. I am eager to continue leveraging my software development 
+                  expertise, project management skills, and creative problem-solving to address complex 
+                  challenges and create innovative solutions that improve lives.
                   </h2>
 
                   {!showMore && (
