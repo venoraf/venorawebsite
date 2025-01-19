@@ -344,7 +344,7 @@ export default function Search() {
               <img
                 src={
                   displayQuery == "life"
-                    ? "search-img/life.jpeg"
+                    ? "search-img/life.jpg"
                     : "https://github-readme-stats.vercel.app/api/top-langs/?username=venoraf&layout=donut&theme=radical"
 
                 }
